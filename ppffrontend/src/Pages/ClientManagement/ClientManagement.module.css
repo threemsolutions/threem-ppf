@@ -1,0 +1,138 @@
+/* Main container */
+
+.addbutton {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 30px;
+  background-color: #28a745;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  right: 180px;
+}
+
+.mainTableContainer {
+  justify-content: center;
+  align-items: center;
+  max-width: 4500px;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.edit {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 580px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  padding-left: 0px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.heading {
+  order: 2;
+  flex: 1;
+  text-align: left;
+  font-size: 24px;
+  color: #333;
+  margin-top: 95px;
+  margin-left: 320px;
+  margin-right: 0px;
+}
+.exportPDF,
+.exportExcel {
+  order: 3;
+  cursor: pointer;
+  margin-top: 90px;
+}
+.exportExcel {
+  color: #28a745;
+  cursor: pointer;
+  gap: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  margin-right: 55px;
+}
+.exportPDF {
+  color: #dc3545;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 0px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.searchBar {
+  order: 1;
+  flex: 1;
+}

@@ -1,0 +1,30 @@
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 450px;
+  margin-top: 90px;
+  left: 22px; /* Adjust width as needed */
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e3e4de;
+  font-size: 20px;
+  color: #393e39;
+  padding: 10px 20px;
+  outline: 1px solid #e3e4de;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px; /* Moves the icon to the right */
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+}
+.searchInput::placeholder {
+  font-size: 15px;
+  color: #999;
+}

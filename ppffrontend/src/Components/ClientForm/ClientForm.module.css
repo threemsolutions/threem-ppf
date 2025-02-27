@@ -1,0 +1,64 @@
+.clientForm {
+  width: 70%;
+  max-width: 3500px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between input groups */
+}
+
+.formRow {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Makes each input take equal width */
+  min-width: 250px; /* Prevents fields from shrinking too much */
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+.formGroup input,
+.formGroup select {
+  background: rgba(217, 217, 217, 1);
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submitButton {
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  width: 165px;
+  min-height: 50px;
+  font: 500 20px Roboto, sans-serif;
+  border: 1px solid #000;
+  display: block;
+  margin: 20px;
+  margin-left: 190px; /* Centers button */
+}

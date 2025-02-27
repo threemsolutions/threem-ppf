@@ -1,0 +1,57 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.title {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.welcomeSection {
+  padding: 28px 46px;
+}
+
+.welcomeTitle {
+  color: #000;
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+}
+
+.welcomeDescription {
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 13px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+}
+
+.sectionHeader {
+  flex: 1;
+}
+
+.tagline {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-top: 16px;
+  color: #000;
+}

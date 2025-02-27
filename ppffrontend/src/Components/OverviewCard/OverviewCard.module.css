@@ -1,0 +1,20 @@
+.overviewCard {
+  flex: 1;
+}
+.cardIcon {
+  width: 48px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 16px;
+}
+
+.cardDescription {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+}

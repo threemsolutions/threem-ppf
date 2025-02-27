@@ -1,0 +1,53 @@
+.section {
+  background-color: #ffffff;
+  padding: 20px 50px;
+  min-height: 420px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+}
+
+.sectionHeader {
+  flex: 1;
+}
+
+.tagline {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-top: 16px;
+  color: #000;
+}
+
+.sectionContent {
+  flex: 1;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.actions {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
