@@ -21,7 +21,6 @@ import {
 import styles from "./RoleTable.module.css";
 import { Role, RoleTableProps } from "../../types";
 import { Button } from "../Button/Button";
-import * as XLXS from "xlsx";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
@@ -106,10 +105,6 @@ const RoleTable: React.FC<RoleTableProps> = ({
           ? "Delete"
           : "Inactive",
     }));
-    const worksheet = XLXS.utils.json_to_sheet(formattedData);
-    const workbook = XLXS.utils.book_new();
-    XLXS.utils.book_append_sheet(workbook, worksheet, "Roles");
-    XLXS.writeFile(workbook, "RoleData.xlsx");
   };
   const doc = new jsPDF();
   (doc as any).autoTable({

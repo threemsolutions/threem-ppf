@@ -15,7 +15,6 @@ import ClientTable from "../../Components/ClientTable/ClientTable";
 import Spinner from "../../Components/Spinner/Spinner";
 import Search from "../../Components/Search/Search";
 import { FaFileExcel, FaFilePdf } from "react-icons/fa";
-import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
@@ -193,10 +192,7 @@ const ClientManagement: React.FC = () => {
           ? new Date(client.endDate).toISOString().split("T")[0]
           : "-",
       }));
-      const worksheet = XLSX.utils.json_to_sheet(formattedData);
-      const workbook = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(workbook, worksheet, "Clients");
-      XLSX.writeFile(workbook, "ClientData.xlsx");
+      
     } catch (error) {
       toast.error("Failed to export Excel");
     }

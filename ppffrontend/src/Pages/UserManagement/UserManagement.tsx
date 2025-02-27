@@ -15,7 +15,6 @@ import UserTable from "../../Components/UserTable/UserTable";
 import Spinner from "../../Components/Spinner/Spinner";
 import Search from "../../Components/Search/Search";
 import { FaFileExcel, FaFilePdf } from "react-icons/fa";
-import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
@@ -234,10 +233,6 @@ const UserManagement: React.FC = () => {
         "Role Name": roleMap[user.roleId] || "Unknown",
         DOB: new Date(user.dob).toLocaleDateString(),
       }));
-      const worksheet = XLSX.utils.json_to_sheet(formattedData);
-      const workbook = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(workbook, worksheet, "Users");
-      XLSX.writeFile(workbook, "UserData.xlsx");
     } catch (error) {
       toast.error("Failed to export Excel");
     }
